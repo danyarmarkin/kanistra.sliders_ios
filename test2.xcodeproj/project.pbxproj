@@ -20,7 +20,6 @@
 		EC941B4E2670E758002C1B3D /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = EC941B4D2670E758002C1B3D /* FirebaseStorage */; };
 		EC941B502670E758002C1B3D /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = EC941B4F2670E758002C1B3D /* FirebaseDatabase */; };
 		EC941B522670E758002C1B3D /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = EC941B512670E758002C1B3D /* FirebaseFirestore */; };
-		EC941B542670F08C002C1B3D /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC941B532670F08C002C1B3D /* Database.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +56,6 @@
 		EC8A6AF02670D5B2003D2704 /* test2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test2UITests.swift; sourceTree = "<group>"; };
 		EC8A6AF22670D5B2003D2704 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC8A6B002670D83D003D2704 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		EC941B532670F08C002C1B3D /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +117,6 @@
 				EC8A6AD92670D5B2003D2704 /* LaunchScreen.storyboard */,
 				EC8A6ADC2670D5B2003D2704 /* Info.plist */,
 				EC8A6B002670D83D003D2704 /* GoogleService-Info.plist */,
-				EC941B532670F08C002C1B3D /* Database.swift */,
 				225859BE6B09785801B26EE8 /* RealtimeDatabase.swift */,
 			);
 			path = test2;
@@ -236,7 +233,7 @@
 			);
 			mainGroup = EC8A6AC22670D5B1003D2704;
 			packageReferences = (
-				EC941B4C2670E758002C1B3D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				EC941B4C2670E758002C1B3D /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */,
 			);
 			productRefGroup = EC8A6ACC2670D5B1003D2704 /* Products */;
 			projectDirPath = "";
@@ -284,7 +281,6 @@
 			files = (
 				EC8A6AD32670D5B1003D2704 /* ViewController.swift in Sources */,
 				EC8A6ACF2670D5B1003D2704 /* AppDelegate.swift in Sources */,
-				EC941B542670F08C002C1B3D /* Database.swift in Sources */,
 				EC8A6AD12670D5B1003D2704 /* SceneDelegate.swift in Sources */,
 				2258516C91E227DB2C275F31 /* RealtimeDatabase.swift in Sources */,
 			);
@@ -621,7 +617,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		EC941B4C2670E758002C1B3D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+		EC941B4C2670E758002C1B3D /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
 			requirement = {
@@ -634,17 +630,17 @@
 /* Begin XCSwiftPackageProductDependency section */
 		EC941B4D2670E758002C1B3D /* FirebaseStorage */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = EC941B4C2670E758002C1B3D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = EC941B4C2670E758002C1B3D /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
 			productName = FirebaseStorage;
 		};
 		EC941B4F2670E758002C1B3D /* FirebaseDatabase */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = EC941B4C2670E758002C1B3D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = EC941B4C2670E758002C1B3D /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
 			productName = FirebaseDatabase;
 		};
 		EC941B512670E758002C1B3D /* FirebaseFirestore */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = EC941B4C2670E758002C1B3D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = EC941B4C2670E758002C1B3D /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
 			productName = FirebaseFirestore;
 		};
 /* End XCSwiftPackageProductDependency section */
