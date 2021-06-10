@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="test2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.20000000000000001" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="g6b-WF-h6a">
+                                <rect key="frame" x="22" y="313.5" width="370" height="31"/>
+                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                <connections>
+                                    <action selector="sliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="qhr-24-23i"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3rh-80-9Bx" propertyAccessControl="none">
+                                <rect key="frame" x="24" y="240" width="366" height="25.5"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" staticText="YES"/>
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6eL-0k-yMF">
+                                <rect key="frame" x="16" y="436.5" width="382" height="4"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Compass Value" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6PL-cE-1we">
+                                <rect key="frame" x="16" y="407.5" width="382" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="180" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T5p-p8-cgM">
+                                <rect key="frame" x="16" y="456.5" width="382" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g6b-WF-h6a" secondAttribute="trailing" constant="24" id="7VI-Ef-WJ3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6PL-cE-1we" secondAttribute="trailing" constant="16" id="Fvn-Gm-Cd1"/>
+                            <constraint firstItem="6PL-cE-1we" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="LcU-NS-wmG"/>
+                            <constraint firstItem="T5p-p8-cgM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Ns8-YT-JIM"/>
+                            <constraint firstItem="g6b-WF-h6a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="UTJ-u6-JNj"/>
+                            <constraint firstItem="6eL-0k-yMF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="cMd-fn-6Ds"/>
+                            <constraint firstItem="3rh-80-9Bx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="dRk-nv-yTT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6eL-0k-yMF" secondAttribute="trailing" constant="16" id="eNx-mc-gba"/>
+                            <constraint firstItem="6eL-0k-yMF" firstAttribute="top" secondItem="6PL-cE-1we" secondAttribute="bottom" constant="8" id="fZE-Ps-lOz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3rh-80-9Bx" secondAttribute="trailing" constant="24" id="fhJ-qx-bhr"/>
+                            <constraint firstItem="g6b-WF-h6a" firstAttribute="top" secondItem="3rh-80-9Bx" secondAttribute="bottom" constant="48" id="oWp-wF-8mv"/>
+                            <constraint firstItem="T5p-p8-cgM" firstAttribute="top" secondItem="6eL-0k-yMF" secondAttribute="bottom" constant="16" id="qTQ-II-e7T"/>
+                            <constraint firstItem="6PL-cE-1we" firstAttribute="top" secondItem="g6b-WF-h6a" secondAttribute="bottom" constant="64" id="r0z-2C-csh"/>
+                            <constraint firstItem="3rh-80-9Bx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="196" id="uK0-ux-Hfd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="T5p-p8-cgM" secondAttribute="trailing" constant="16" id="vkr-wA-vcU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="slider" destination="g6b-WF-h6a" id="XHz-uk-0Vo"/>
+                        <outlet property="sliderLabel" destination="3rh-80-9Bx" id="zDa-Pz-suk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="69.642857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
