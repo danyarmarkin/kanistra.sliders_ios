@@ -16,8 +16,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     let db = Firestore.firestore()
     var locationManager: CLLocationManager!
     var realtimeDatabase: RealtimeDatabase!
+    @IBOutlet weak var compassBar: UIProgressView!
     @IBOutlet weak var slider: UISlider!
-
+    @IBOutlet weak var compassLabel: UILabel!
+    
+    
     @IBOutlet weak var sliderLabel: UILabel!
     let SLIDER_VALUE_ID = "sliderValue"
     
@@ -49,6 +52,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
 
     func locationManager(manager: CLLocationManager!, didUpdateHeading newHeading: CLHeading!) {
         print(newHeading.magneticHeading)
+        compassLabel.text = String(newHeading.magneticHeading)
+        compassBar.progress = Float(newHeading.magneticHeading) / 360
     }
 
 

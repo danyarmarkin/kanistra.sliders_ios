@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.20000000000000001" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="g6b-WF-h6a">
-                                <rect key="frame" x="22" y="313.5" width="370" height="31"/>
+                                <rect key="frame" x="22" y="314" width="370" height="31"/>
                                 <color key="tintColor" systemColor="systemOrangeColor"/>
                                 <connections>
                                     <action selector="sliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="qhr-24-23i"/>
@@ -70,6 +70,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="compassBar" destination="6eL-0k-yMF" id="Qxd-kb-ifa"/>
+                        <outlet property="compassLabel" destination="T5p-p8-cgM" id="HhP-xn-TsB"/>
                         <outlet property="slider" destination="g6b-WF-h6a" id="XHz-uk-0Vo"/>
                         <outlet property="sliderLabel" destination="3rh-80-9Bx" id="zDa-Pz-suk"/>
                     </connections>
